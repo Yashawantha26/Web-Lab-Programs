@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Time Table</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            width: 90%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+
+        caption {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        th,
+        td {
+            border: 1px solid #131111;
+            padding: 10px;
+            text-align: center;
+        }
+
+        thead {
+            background-color: #444444;
+            color: white;
+        }
+
+        tfoot {
+            background-color: #0e0217;
+            font-style: italic;
+        }
+
+        tr:nth-child(even) {
+            background-color: #c0a3a3;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #e3fae0;
+        }
+
+        .lab {
+            background-color: #e7cbff;
+            font-weight: bold;
+        }
+
+        .elective {
+            background-color: #4109aa;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+
+        <caption>Time Table</caption>
+
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>9:00-10:00</th>
+                <th>10:00-11:00</th>
+                <th>11:00-11:15</th>
+                <th>11:15-12:15</th>
+                <th>12:15-1:15</th>
+                <th>1:15-2:05</th>
+                <th>2:05-3:05</th>
+                <th>3:05-4:05</th>
+                <th>4:05-5:05</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Monday</td>
+                <td colspan="2" class="lab">CN LAB</td>
+                <td rowspan="6">TEA Break</td>
+                <td>AI</td>
+                <td>SE&PM</td>
+                <td rowspan="6">Lunch Break</td>
+                <td>TOC(T)</td>
+                <td colspan="2">Student Counselling</td>
+            </tr>
+
+            <tr>
+                <td>Tuesday</td>
+                <td>RM</td>
+                <td>TOC</td>
+                <td>AI</td>
+                <td>CN</td>
+                <td colspan="2" class="lab">Web Lab</td>
+                <td>Library</td>
+            </tr>
+
+            <tr>
+                <td>Wednesday</td>
+                <td>AI</td>
+                <td>SE&PM</td>
+                <td>TOC</td>
+                <td>CN</td>
+                <td colspan="3">Department Activity</td>
+            </tr>
+
+            <tr>
+                <td>Thursday</td>
+                <td>TOC</td>
+                <td>CN</td>
+                <td>RM</td>
+                <td>Library</td>
+                <td colspan="3">Mini Project</td>
+            </tr>
+
+            <tr>
+                <td>Friday</td>
+                <td>TOC</td>
+                <td>RM</td>
+                <td>SE&PM</td>
+                <td>ES</td>
+                <td>ES</td>
+                <td colspan="2">Library</td>
+            </tr>
+
+            <tr>
+                <td>Saturday</td>
+                <td>SE&PM(T)</td>
+                <td>TOC(T)</td>
+                <td>RM(T)</td>
+                <td>Dept. Activity</td>
+                <td colspan="3">Physical Education</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="10">
+                    Note: LAB hours and Elective hours are color coded.
+                </td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+</body>
+
+</html>
