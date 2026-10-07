@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+
+    <style>
+        body {
+            font-family: "Times New Roman";
+            background-color: #f2f2f2;
+        }
+
+        table {
+            width: 95%;
+            margin: auto;
+            border-collapse: collapse;
+            border: 2px solid #174a9c;
+        }
+
+        th {
+            background-color: #d8b8f0;
+            color: #061b73;
+            font-size: 30px;
+            padding: 12px;
+            border: 2px solid #174a9c;
+        }
+
+        .sub {
+            color: #8b1a1a;
+            font-size: 22px;
+        }
+
+        td {
+            border: 1px solid #777;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        .label {
+            width: 25%;
+            background-color: #b9dcf7;
+            color: #061b73;
+            font-weight: bold;
+        }
+
+        .data {
+            background-color: #fffde7;
+        }
+
+        input, select, textarea {
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"] {
+            width: 95%;
+        }
+
+        select {
+            width: 40%;
+        }
+
+        textarea {
+            width: 95%;
+            height: 70px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            accent-color: #1976d2;
+        }
+
+        .buttons {
+            background-color: #c9f2b4;
+            text-align: center;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            color: white;
+            border: none;
+            padding: 10px 30px;
+            margin: 5px;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #1976d2;
+        }
+
+        input[type="reset"] {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+
+<body>
+
+<form>
+
+<table>
+
+    <tr>
+        <th colspan="2">
+            Student Registration Form<br>
+            <span class="sub">Dept. of CSE, RIT, HASSAN</span>
+        </th>
+    </tr>
+
+    <tr>
+        <td class="label">Full Name:</td>
+        <td class="data">
+            <input type="text"
+                   placeholder="Enter your full name"
+                   required>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="label">Email:</td>
+        <td class="data">
+            <input type="email"
+                   placeholder="Enter your email address"
+                   required>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="label">Password:</td>
+        <td class="data">
+            <input type="password"
+                   placeholder="Enter your password"
+                   required>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="label">Gender:</td>
+        <td class="data">
+            <input type="radio" name="gender" required>
+            Male
+            <input type="radio" name="gender">
+            Female
+        </td>
+    </tr>
+
+    <tr>
+        <td class="label">Date of Birth:</td>
+        <td class="data">
+            <input type="date" required>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="label">Phone Number:</td>
+        <td class="data">
+            <input type="tel"
+                   placeholder="Enter your phone number"
+                   required>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="label">Course:</td>
+        <td class="data">
+            <select required>
+                <option value="">--Select Course--</option>
+                <option>B.Tech</option>
+                <option>B.C.A</option>
+                <option>M.Sc</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="label">Hobbies:</td>
+        <td class="data">
+            <input type="checkbox"> Reading
+            <input type="checkbox"> Sports
+            <input type="checkbox"> Music
+        </td>
+    </tr>
+
+    <tr>
+        <td class="label">Address:</td>
+        <td class="data">
+            <textarea placeholder="Enter your address"></textarea>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2" class="buttons">
+            <input type="submit" value="Register">
+            <input type="reset" value="Reset">
+        </td>
+    </tr>
+
+</table>
+
+</form>
+
+</body>
+</html>
