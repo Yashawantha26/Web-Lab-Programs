@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+            color: #061b73;
+            font-size: 28px;
+        }
+
+        table {
+            margin: auto;
+            background-color: #fffde7;
+            padding: 20px;
+            border: 2px solid #174a9c;
+            border-radius: 10px;
+        }
+
+        td {
+            padding: 10px;
+            font-size: 16px;
+            color: #333333;
+            border: 1px solid #777777;
+        }
+
+        td:first-child {
+            background-color: #b9dcf7;
+            color: #061b73;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+            accent-color: #1976d2;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #1976d2;
+        }
+
+        input[type="reset"] {
+            background-color: #d32f2f;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0d47a1;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #b71c1c;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Student Registration Form</h2>
+
+    <form action="#" method="post">
+
+        <table>
+
+            <tr>
+                <td>Full Name:</td>
+                <td>
+                    <input type="text"
+                           name="fullname"
+                           placeholder="Enter your full name"
+                           required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Email:</td>
+                <td>
+                    <input type="email"
+                           name="email"
+                           placeholder="Enter your email address"
+                           required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Password:</td>
+                <td>
+                    <input type="password"
+                           name="password"
+                           placeholder="Enter your password"
+                           required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio"
+                           name="gender"
+                           value="male"
+                           required>
+                    Male
+
+                    <input type="radio"
+                           name="gender"
+                           value="female">
+                    Female
+
+                    <input type="radio"
+                           name="gender"
+                           value="other">
+                    Other
+                </td>
+            </tr>
+
+            <tr>
+                <td>Date of Birth:</td>
+                <td>
+                    <input type="date"
+                           name="dob"
+                           required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Phone Number:</td>
+                <td>
+                    <input type="tel"
+                           name="phone"
+                           placeholder="Enter your phone number"
+                           required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Course:</td>
+                <td>
+                    <select name="course" required>
+                        <option value="">Select a course</option>
+                        <option value="Btech">B.Tech</option>
+                        <option value="BCA">B.C.A</option>
+                        <option value="Msc">M.Sc</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Hobbies:</td>
+                <td>
+                    <input type="checkbox"
+                           name="hobbies"
+                           value="reading">
+                    Reading
+
+                    <input type="checkbox"
+                           name="hobbies"
+                           value="sports">
+                    Sports
+
+                    <input type="checkbox"
+                           name="hobbies"
+                           value="music">
+                    Music
+                </td>
+            </tr>
+
+            <tr>
+                <td>Address:</td>
+                <td>
+                    <textarea name="address"
+                              rows="4"
+                              placeholder="Enter your address"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2"
+                    style="text-align: center;
+                           background-color: #c9f2b4;">
+
+                    <input type="submit"
+                           value="Register">
+
+                    <input type="reset"
+                           value="Reset">
+
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+</body>
+</html>
